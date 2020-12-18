@@ -28,6 +28,7 @@ nav {
 
 article {
   display: flex;
+  margin: 0 auto;
 }
 
 .contentPane {
@@ -37,7 +38,7 @@ article {
   height: 41vh;
   width: 38vw;
   margin-top: 3vw;
-  padding: 3vw;
+  padding: 3vw
 }
 
 #userSelections {
@@ -49,6 +50,10 @@ article {
   font-size: 3.5vh;
 }
 
+#userSelections > .component {
+  /* font-size: 2vh; */
+}
+
 #results {
   margin-left: 6vw;
   margin-right: 8vw;
@@ -56,12 +61,27 @@ article {
   justify-content: center;
 }
 
-ul > input {
+.component {
   margin: 0.25vw;
+  /* font-style: normal; */
+  /* font-weight: normal; */
   float: left;
 }
 
-
-#require {
+.red {
   color: red;
+}
+
+.lets-cook-button {
+  background-color: #0fb9b1;
+  border: none;
+  border-radius: 3px;
+  width: 18vw;
+  height: 4vh;
+  font-size: 0.5em;
+}
+
+.cookpot {
+  width: 30%;
+  height: auto;
 }

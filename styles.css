@@ -8,25 +8,60 @@ red - #ee5253
 
 */
 
-.font {
-  font-family: 'Roboto', sans-serif;
+
+body {
+  background: url('assets/burger-friends.jpg');
+  background-size: cover;
+  margin: 0px;
+  font-family: 'Roboto bold', sans-serif;
 }
 
-.teal {
+nav {
+  display: flex;
+  align-items: center;
   background: #0fb9b1;
+  font-size: 3vh;
+  font-weight: bold;
+  height: 1.5vh;
+  padding: 2vw;
 }
 
-.nav-bar {
-  height: 36px;
+article {
+  display: flex;
 }
 
-.backdrop-image {
-  background: assets/burger-friends.jpg;
-}
-
-.content-pane {
+.contentPane {
+  font-weight: bold;
+  justify-content: center;
   background: rgba(225, 225, 225, .9);
-  opacity: 0.5;
-  height: 225px;
-  width: 275px;
+  height: 41vh;
+  width: 38vw;
+  margin-top: 3vw;
+  padding: 3vw;
+}
+
+#userSelections {
+  margin-left: 8vw;
+  margin-right: 6vw;
+}
+
+#userSelections > h1 {
+  font-size: 3.5vh;
+}
+
+#results {
+  margin-left: 6vw;
+  margin-right: 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+ul > input {
+  margin: 0.25vw;
+  float: left;
+}
+
+
+#require {
+  color: red;
 }

@@ -7,10 +7,22 @@
     <nav>
       What's for Dinner?
     </nav>
-    <div class='contentPane' id='userSelections'>
-      What are you looking for?
-    </div>
-    <div class='contentPane' id='results'></div>
+    <article>
+      <div class='contentPane' id='userSelections'>
+        <h1>What are you looking for?<span id='require'>*</span></h1>
+        <ul>
+          <input type='radio' id='side' name='meal-component' value='side'>
+          <label for='side'>Side</label><br>
+          <input type='radio' id='main-dish' name='meal-component' value='main-dish'>
+          <label for='main-dish'>Main Dish</label><br>
+          <input type='radio' id='dessert' name='meal-component' value='dessert'>
+          <label for='dessert'>Dessert</label><br>
+        </ul>
+      </div>
+      <div class='contentPane' id='results'>
+        <img src='assets/cookpot.svg' alt='line drawing of a cooking pot' width=100vw/>
+      </div>
+    </article>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>

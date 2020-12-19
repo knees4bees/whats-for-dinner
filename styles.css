@@ -79,9 +79,34 @@ article {
   width: 18vw;
   height: 4vh;
   font-size: 0.5em;
+  text-transform: uppercase;
 }
 
 .cookpot {
   width: 30%;
   height: auto;
+}
+
+.you-should-make-food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.you-should-make {
+  font-size: 0.75em;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.display-food {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }

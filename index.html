@@ -4,7 +4,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <nav>
+      What's for Dinner?
+    </nav>
+    <article>
+      <div class='contentPane' id='userSelections'>
+        <h1>What are you looking for?<sup class='red'>*</sup></h1>
+        <ul>
+          <input type='radio' class='meal-component' id='side' name='meal-component' value='side'>
+          <label for='side'>Side</label><br>
+          <input type='radio' class='meal-component' id='main-dish' name='meal-component' value='main-dish'>
+          <label for='main-dish'>Main Dish</label><br>
+          <input type='radio' class='meal-component' id='dessert' name='meal-component' value='dessert'>
+          <label for='dessert'>Dessert</label><br>
+        </ul>
+        <button class='lets-cook-button'>let's cook</button>
+      </div>
+      <div class='contentPane' id='results'>
+        <img class='cookpot' src='assets/cookpot.svg' alt='line drawing of a cooking pot' width=100vw/>
+        <section class='you-should-make-food hidden'>
+          <h2 class='you-should-make'><it>You should make:</it></h2>
+          <h1 class='display-food'>Display Food Here</h1>
+        </section>
+      </div>
+    </article>
   </body>
+  <script type="text/javascript" src="data.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </html>

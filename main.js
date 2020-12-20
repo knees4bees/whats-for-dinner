@@ -11,7 +11,7 @@ letsCookButton.addEventListener('click', showMeTheFoody);
 clearButton.addEventListener('click', clearFood);
 
 
-// Event Handlers and Other Functions
+// Toolkit Functions
 function getRandomIndex(array) {
   return Math.floor(Math.random()*array.length);
 }
@@ -34,6 +34,8 @@ function unhide(item) {
   item.classList.remove('hidden');
 }
 
+
+// Event Handlers
 function showMeTheFoody() {
   var type = document.querySelector('input[name="meal-component"]:checked').value;
   var foods = grabArray(type);
@@ -44,7 +46,7 @@ function showMeTheFoody() {
 }
 
 function clearFood() {
-  hide(youShouldMakeFood);
   unhide(cookpot);
+  hide(youShouldMakeFood);
   hide(clearButton);
 }

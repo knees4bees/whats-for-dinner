@@ -7,17 +7,23 @@
     <nav>
       What's for Dinner?
     </nav>
-    <article>
+    <article class='wrapper'>
       <div class='contentPane' id='userSelections'>
-        <h1>What are you looking for?<sup class='red'>*</sup></h1>
-        <ul>
-          <input type='radio' class='meal-component' id='side' name='meal-component' value='side'>
-          <label for='side'>Side</label><br>
-          <input type='radio' class='meal-component' id='main-dish' name='meal-component' value='main-dish'>
-          <label for='main-dish'>Main Dish</label><br>
-          <input type='radio' class='meal-component' id='dessert' name='meal-component' value='dessert'>
-          <label for='dessert'>Dessert</label><br>
-        </ul>
+        <h1 class='question'>What are you looking <span class='keep-together'>for?<span class='superscript'>*</span></span></h1>
+        <section class='choices'>
+          <section class='button-and-label' id='side-label'>
+            <input type='radio' class='meal-component' id='side' name='meal-component' value='side'>
+            <label for='side'>Side</label><br>
+          </section>
+          <section class='button-and-label'id='main-dish-label'>
+            <input type='radio' class='meal-component' id='main-dish' name='meal-component' value='main-dish'>
+            <label for='main-dish'>Main Dish</label><br>
+          </section>
+          <section class='button-and-label'id='main-dish-label'>
+            <input type='radio' class='meal-component' id='dessert' name='meal-component' value='dessert'>
+            <label for='dessert'>Dessert</label><br>
+          </section>
+        </section>
         <button class='lets-cook-button'>let's cook</button>
       </div>
       <div class='contentPane' id='results'>

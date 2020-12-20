@@ -3,10 +3,12 @@ var cookpot = document.querySelector('.cookpot');
 var youShouldMakeFood = document.querySelector('.you-should-make-food');
 var youShouldMake = document.querySelector('.you-should-make');
 var displayedFood = document.querySelector('.display-food');
+var clearButton = document.querySelector('.clear-button');
 
 
 // Event Listeners
 letsCookButton.addEventListener('click', showMeTheFoody);
+clearButton.addEventListener('click', clearFood);
 
 
 // Event Handlers and Other Functions
@@ -38,4 +40,11 @@ function showMeTheFoody() {
   displayedFood.innerText = `${foods[getRandomIndex(foods)]}!`;
   hide(cookpot);
   unhide(youShouldMakeFood);
+  unhide(clearButton);
+}
+
+function clearFood() {
+  hide(youShouldMakeFood);
+  unhide(cookpot);
+  hide(clearButton);
 }

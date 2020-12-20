@@ -35,31 +35,34 @@ nav {
 
 .contentPane {
   background: rgba(225, 225, 225, .9);
-  height: 35vh;
+  height: 48vh;
   min-height: 125px;
   max-height: 400px;
-  width: 30vw;
+  width: 32vw;
   min-width: 140px;
   max-width: 500px;
-  padding: 3.5vw;
+  padding: 2vh;
 }
 
 .question {
-  margin-top: 5vh;
-  font-size: 3.5vh;
+  font-size: calc(10px + 2vh);
+  margin: 0;
+  font-weight: bold;
 }
 
 #userSelections {
   display: flex;
   flex-direction: column;
   padding-left: 3vw;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .choices {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 .choices > section {
   margin: 0.5vh;
@@ -67,12 +70,11 @@ nav {
 }
 
 input[type='radio'] {
-  /* width: 1.5em; */
   width:calc(2px + 1vw * 1vh);
 }
 
 label {
-  font-size: 3vh;
+  font-size: calc(6px + 1.5vh);
   margin-left: 0.25vw;
 }
 
@@ -81,9 +83,10 @@ label {
   align-items: center;
 }
 
-#results {
+#results-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .meal-component {
@@ -108,17 +111,20 @@ label {
   width: 16vw;
   min-width: 100px;
   height: 5vh;
-  min-height: 20px;
   max-height: 100px;
-  margin-top: 2vh;
-  margin-bottom: 5vh;
-  font-size: 2vh;
+  font-size: calc(6px + 1vh);
   text-transform: uppercase;
 }
 
+.cookpot-wrapper {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
 .cookpot {
-  width: 30%;
-  height: auto;
+  min-width: 70px;
+  min-height: 70px;
+  max-height: 30vh;
 }
 
 .you-should-make-food {
@@ -140,6 +146,31 @@ label {
   font-size: 4vh;
   margin: 0;
   text-align: center;
+}
+
+.spacing-block-top {
+  height: 10vh;
+}
+
+.spacing-block-bottom {
+  height: 2vh;
+}
+
+.clear-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-button {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  min-width: 60px;
+  height: 5vh;
+  max-height: 100px;
+  font-size: 2vh;
+  text-transform: uppercase;
 }
 
 .hidden {

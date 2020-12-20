@@ -35,10 +35,10 @@ nav {
 
 .contentPane {
   background: rgba(225, 225, 225, .9);
-  height: 35vh;
+  height: 48vh;
   min-height: 125px;
   max-height: 400px;
-  width: 30vw;
+  width: 32vw;
   min-width: 140px;
   max-width: 500px;
   padding: 2vh;
@@ -89,11 +89,6 @@ label {
   justify-content: space-between;
 }
 
-.results {
-  display: flex;
-  justify-content: center;
-}
-
 .meal-component {
   margin: 0.25vw;
   float: left;
@@ -121,9 +116,15 @@ label {
   text-transform: uppercase;
 }
 
+.cookpot-wrapper {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
 .cookpot {
-  width: 30%;
-  height: auto;
+  min-width: 70px;
+  min-height: 70px;
+  max-height: 30vh;
 }
 
 .you-should-make-food {
@@ -145,6 +146,14 @@ label {
   font-size: 4vh;
   margin: 0;
   text-align: center;
+}
+
+.spacing-block-top {
+  height: 10vh;
+}
+
+.spacing-block-bottom {
+  height: 2vh;
 }
 
 .clear-button-wrapper {

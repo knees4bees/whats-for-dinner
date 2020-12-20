@@ -41,7 +41,6 @@ nav {
   width: 30vw;
   min-width: 140px;
   max-width: 500px;
-  padding: 3.5vw;
 }
 
 .question {
@@ -50,6 +49,7 @@ nav {
 }
 
 #userSelections {
+  padding: 3.5vw;
   display: flex;
   flex-direction: column;
   padding-left: 3vw;
@@ -81,9 +81,19 @@ label {
   align-items: center;
 }
 
-#results {
+#results-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5vw;
+  /* align-items: center; */
+}
+
+.results {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
+  padding: 3vw;
 }
 
 .meal-component {
@@ -108,10 +118,7 @@ label {
   width: 16vw;
   min-width: 100px;
   height: 5vh;
-  min-height: 20px;
   max-height: 100px;
-  margin-top: 2vh;
-  margin-bottom: 5vh;
   font-size: 2vh;
   text-transform: uppercase;
 }
@@ -119,6 +126,7 @@ label {
 .cookpot {
   width: 30%;
   height: auto;
+  /* align-self: center; */
 }
 
 .you-should-make-food {
@@ -140,6 +148,24 @@ label {
   font-size: 4vh;
   margin: 0;
   text-align: center;
+}
+
+.clear-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-button {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 6vw;
+  min-width: 40px;
+  height: 5vh;
+  max-height: 100px;
+  font-size: 2vh;
+  text-transform: uppercase;
 }
 
 .hidden {
